@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 body{
-    margin: 0px;
+    /* margin: 0px; */
     background-color: #2F3543;
+    /* background-image: url(images/paw.png);
+    background-repeat: repeat;
+    background-size: 90px;
+    padding: 60px 70px; */
 }
 .page{
-    margin: 15px;
+    margin: 20px; 
     background-color: #F4E3E3;
     border-radius: 10px;
 }
+
+/* nav */
 nav{
     display: flex;
     color: #2F3543;
@@ -42,7 +48,7 @@ nav{
 
 .box{
     border: 1px solid #2F3543;
-    border-radius: 50px;
+    border-radius: 14.5px;
     font-size: 16px;
     width: 250px; 
     height: fit-content;
@@ -71,7 +77,6 @@ nav{
     list-style-type: none;
     display: flex;
     align-items: center;
-    /* margin-right: 50px; */
 }
 .listItem{
     font-family: 'Josefin Sans', sans-serif;
@@ -85,4 +90,133 @@ nav{
     background-color: #2F3543;
     color: white;
     cursor: pointer;
+}
+
+/* sign in/up */
+#firstPart{
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+}
+.signInUp{
+    background-image: url(images/cat.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0 60px 60px 0;
+}
+.signInUp .overlay {
+    width: 753px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 60px 60px 0;
+    /* padding: 0 16px; */
+  }
+.signInUp .btn{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 23px;
+    border: none;
+    color: white;
+    opacity: 0.91;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.signInUp .btn:hover{
+    opacity: 0.97;
+    cursor: pointer;
+    font-size: 25px;
+}
+.in{
+    background-color: #2F3543;
+    margin-bottom: 25px;
+}
+.out{
+    background-color: #FF6B81;
+}
+.welcoming{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xxx-large;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+/* discover */
+#discover{
+    background-color: #F4F4F4;
+    margin: 30px 50px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+    flex-direction: column;
+    font-weight: bold;
+    color: #2F3543;
+}
+#discoverList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.card{
+    height: fit-content;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 50px; 
+    background-color: white;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: transform 1s;
+}
+.cardPic{
+    width: 380px;
+    height: 410px;
+}
+.cardName{
+    margin-top: 1px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.overlayTwo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  transition: .5s ease;
+}
+.card:hover .overlayTwo{
+    height: 100%;
+}
+
+/* footer */
+footer{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+    padding: 10px;
+    text-align: center;
 }
