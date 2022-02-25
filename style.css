@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 body{
-    /* margin: 0px; */
+    margin: 0px 0px;
     background-color: #2F3543;
     /* background-image: url(images/paw.png);
     background-repeat: repeat;
@@ -8,7 +8,7 @@ body{
     padding: 60px 70px; */
 }
 .page{
-    margin: 20px; 
+    margin: 20px 20px 20px 20px; 
     background-color: #F4E3E3;
     border-radius: 10px;
 }
@@ -95,7 +95,7 @@ nav{
 /* sign in/up */
 #firstPart{
     display: flex;
-    width: 100vw;
+    width: fit-content;
     height: 75vh;
 }
 .signInUp{
@@ -141,14 +141,15 @@ nav{
     background-color: #FF6B81;
 }
 .welcoming{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: xxx-large;
-    margin-left: 200px;
-    margin-top: 70px;
+    margin-left: 120px;
+}
+.welcoming img{
+    width: 990px;
+    height: 700px;
 }
 
 /* discover */
-#discover{
+#Adoption{
     background-color: #F4F4F4;
     margin: 30px 50px;
     border-radius: 60px;
@@ -161,7 +162,7 @@ nav{
     font-weight: bold;
     color: #2F3543;
 }
-#discoverList{
+#adoptionList{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -183,9 +184,13 @@ nav{
     transform: scale(1.04);
     transition: transform 1s;
 }
-.cardPic{
+/* .cardPic{
     width: 380px;
     height: 410px;
+} */
+.cardPic{
+    width: 280px;
+    height: 310px;
 }
 .cardName{
     margin-top: 1px;
@@ -197,6 +202,25 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+.card:hover .cardName{
+    display: none;
+}  
+.cardInfo{
+    margin-top: 1px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+}
+.card:hover .cardInfo{
+    display: block;
 }
 .overlayTwo{
   position: absolute;
