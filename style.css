@@ -2,10 +2,6 @@
 body{
     margin: 0px 0px;
     background-color: #2F3543;
-    /* background-image: url(images/paw.png);
-    background-repeat: repeat;
-    background-size: 90px;
-    padding: 60px 70px; */
 }
 .page{
     margin: 20px 20px 20px 20px; 
@@ -19,6 +15,12 @@ nav{
     color: #2F3543;
     align-items: center;
     justify-content: space-between;
+}
+@media (max-width: 200px) {
+    nav {
+      display: block;
+      text-align: center;
+    }
 }
 .theLogo{
     display: flex;
@@ -73,6 +75,7 @@ nav{
 	padding-left: 10px;
     border-radius: 50px;
 }
+
 .list{
     list-style-type: none;
     display: flex;
@@ -148,7 +151,7 @@ nav{
     height: 700px;
 }
 
-/* discover */
+/* adoption */
 #Adoption{
     background-color: #F4F4F4;
     margin: 30px 50px;
