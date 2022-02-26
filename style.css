@@ -16,7 +16,7 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-@media (max-width: 200px) {
+@media (max-width: 200%) {
     nav {
       display: block;
       text-align: center;
