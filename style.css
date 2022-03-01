@@ -16,12 +16,7 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-@media (max-width: 200%) {
-    nav {
-      display: block;
-      text-align: center;
-    }
-}
+
 .theLogo{
     display: flex;
     align-items: center;
@@ -44,10 +39,27 @@ nav{
     font-size: 25px;
     margin-bottom: 0px; 
 }
-.pp{
+.p2{
     margin-top: 0px; 
 }
-
+.list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.listItem{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    display: inline;
+    margin-left: 25px;
+    padding: 7px;
+    border-radius: 10px;
+}
+.listItem:hover{
+    background-color: #2F3543;
+    color: white;
+    cursor: pointer;
+}
 .box{
     border: 1px solid #2F3543;
     border-radius: 14.5px;
@@ -75,27 +87,34 @@ nav{
 	padding-left: 10px;
     border-radius: 50px;
 }
+@media (max-width: 959px) {
+    nav {
+      display: block;
+      position: relative;
+      height: 200px;
+      width: 100%;
+    }
+    .theLogo, .list, .box{
+        justify-content: center;
+    }
+    .box{
+        margin: auto;
+    }
+    .list{
+        padding: 0;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .theLogo{
+        margin-right: 25px;
+    }
+    .home{
+        margin-left: 0;
+    }
+}
 
-.list{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-.listItem{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    display: inline;
-    margin-left: 25px;
-    padding: 7px;
-    border-radius: 10px;
-}
-.listItem:hover{
-    background-color: #2F3543;
-    color: white;
-    cursor: pointer;
-}
-
-/* sign in/up */
+/* first part */
 #firstPart{
     display: flex;
     width: fit-content;
@@ -152,7 +171,7 @@ nav{
 }
 
 /* adoption */
-#Adoption{
+#adoption{
     background-color: #F4F4F4;
     margin: 30px 50px;
     border-radius: 60px;
@@ -172,6 +191,17 @@ nav{
     justify-content: space-around;
     margin-bottom: 40px;
 }
+@media (max-width: 1629px) {
+    #adoption{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #adoptionList{
+      display: block;
+      width: fit-content;
+    }
+}
 .card{
     height: fit-content;
     display: flex;
@@ -181,6 +211,11 @@ nav{
     border-radius: 50px; 
     background-color: white;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1629px) {
+    .card{
+      margin-bottom: 30px;
+    }
 }
 .card:hover{
     cursor: pointer;
